@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тортики & Тістечка </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>Тортики <span>&</span> Тістечка</h1>
+        </header>
+
+        <div class="category-filter-container">
+            <button class="filter-button active" data-filter="all">Скинути фільтр</button> 
+            <button class="filter-button" data-filter="pirig">Пиріг</button>
+            <button class="filter-button" data-filter="tistechko">Тістечко</button>
+            <button class="filter-button" data-filter="rulet">Рулет</button>
+            <button class="filter-button" data-filter="tort">Торт</button>
+            <button class="filter-button" data-filter="sirnik">Сирники</button>
+        </div>
+        
+        <div class="main-content">
+            
+            <aside id="sidebar-filters">
+                
+                <div class="sidebar-group">
+                    <h4>Калорії у порції</h4>
+                    <input type="range" id="calorie-range" min="0" max="650" value="400" step="50" disabled>
+                    <div id="calories-value">Від 0 до 400 кКал</div>
+                </div>
+                
+                <div class="sidebar-group">
+                    <h4>Категорії</h4>
+                    <button class="filter-button" data-filter="pirig">Пиріг</button>
+                    <button class="filter-button" data-filter="rulet">Рулет</button>
+                    <button class="filter-button" data-filter="sirnik">Сирники</button>
+                    <button class="filter-button" data-filter="tistechko">Тістечко</button>
+                    <button class="filter-button" data-filter="tort">Торт</button>
+                    <button class="filter-button reset-filter" data-filter="all">Скинути фільтр</button>
+                </div>
+            </aside>
+            
+            <main class="recipe-gallery">
+                
+                <div class="recipe-card" data-category="tort">
+                    <img src="https://lasunka.com/s156-9.jpg" alt="Торт: Сметанковий">
+                    <div class="recipe-info">
+                        <h3>Торт: Сметанковий</h3>
+                        <p class="calories">Калорії у порції 265 кКал</p>
+                    </div>
+                </div>
+
+                <div class="recipe-card" data-category="tistechko">
+                    <img src="https://yasensvit.ua/uploads/recipes/prev/64342fdcbd115.webp" alt="Тістечко: Мафін">
+                    <div class="recipe-info">
+                        <h3>Тістечко: Мафін</h3>
+                        <p class="calories">Калорії у порції 305 кКал</p>
+                    </div>
+                </div>
+                
+                <div class="recipe-card" data-category="sirnik">
+                    <img src="https://smachnonews.24tv.ua/resources/photos/news/202306/2327719.jpg?v=1685878802000" alt="Сирники: Три ягоди">
+                    <div class="recipe-info">
+                        <h3>Сирники: Три ягоди</h3>
+                        <p class="calories">Калорії у порції 450 кКал</p>
+                    </div>
+                </div>
+
+                <div class="recipe-card" data-category="tort">
+                    <img src="https://i.ytimg.com/vi/6ndDqVtCDjY/maxresdefault.jpg" alt="Торт: Смачний">
+                    <div class="recipe-info">
+                        <h3>Торт: Смачний</h3>
+                        <p class="calories">Калорії у порції 523 кКал</p>
+                    </div>
+                </div>
+
+                <div class="recipe-card" data-category="rulet">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJMcJT3UfUUP0j6lsLMmPePg2HN7PtqpaRBQ&s" alt="Рулет: Святковий">
+                    <div class="recipe-info">
+                        <h3>Рулет: Святковий</h3>
+                        <p class="calories">Калорії у порції 380 кКал</p>
+                    </div>
+                </div>
+                
+                <div class="recipe-card" data-category="pirig">
+                    <img src="https://shuba.life/static/content/thumbs/1824x912/3/1b/ubn46v---c2x1x50px50p-up--0043caebbacc6cef656e27c32773b1b3.jpg" alt="Пиріг: Свято у бабусі">
+                    <div class="recipe-info">
+                        <h3>Пиріг: Свято у бабусі</h3>
+                        <p class="calories">Калорії у порції 298 кКал</p>
+                    </div>
+                </div>
+                
+            </main>
+            
+        </div> 
+        <footer class="footer">
+            <p>Контакти:</p>
+            <p><a href="mailto:tortik@smakota.ua">tortik@smakota.ua</a></p>
+            <p>© 2019 Smakota</p>
+        </footer>
+        
+    </div>
+
+</body>
+</html>
